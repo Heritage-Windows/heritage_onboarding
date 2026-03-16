@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 215 28% 10%;
+    --foreground: 210 20% 92%;
+
+    --card: 215 25% 14%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 215 25% 14%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 211 55% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 30% 20%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 215 20% 18%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 0 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 18% 20%;
+    --input: 215 18% 22%;
+    --ring: 211 55% 55%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 215 30% 8%;
+    --sidebar-foreground: 210 15% 80%;
+    --sidebar-primary: 211 55% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 210 15% 90%;
+    --sidebar-border: 215 18% 16%;
+    --sidebar-ring: 211 55% 55%;
+
+    --success: 145 65% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --heritage-navy: 210 50% 15%;
+    --heritage-blue: 211 55% 55%;
+    --heritage-red: 0 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
