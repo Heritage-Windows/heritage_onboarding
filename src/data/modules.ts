@@ -186,7 +186,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
         title: "Key 1: 50 Conversations a Day",
         description: "Why hitting your daily conversation target is non-negotiable.",
         videoUrl: "",
-        content: `**Having an average of 50 conversations a day. (NEVER less than 40).**\n\n• It is understandable that some days, fewer people will answer the door than others. However, this should never account for more than 20% variance. (Example: Attaining 40-45 conversations due to less people being home is reasonable, but attaining 28 conversations for that reason is not.)\n\n• Five hours is a sample size for success. Bad luck regarding people being home should not persist over that long of a sample.\n\n• If you truly find yourself in a neighborhood where most of the houses are owned by out-of-towners or are vacant, you must still take ownership for switching neighborhoods before too much of the day has passed.`,
+        content: `**Having an average of 50 conversations a day. (NEVER less than 40).**\n\n• It is understandable that some days, fewer people will answer the door than others. However, this should never account for more than 20% variance. (Example: Attaining 40-45 conversations due to less people being home is reasonable, but attaining 28 conversations for that reason is not.)\n\n• Five hours is a sample size for success. Bad luck regarding people being home should not persist over that long of a sample.\n\n• If you truly find yourself in a neighborhood where most of the houses are being rented or are vacant, you must still take ownership for switching neighborhoods before too much of the day has passed.`,
         quiz: [
           {
             id: "tk1",
