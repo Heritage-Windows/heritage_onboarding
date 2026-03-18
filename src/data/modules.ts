@@ -366,12 +366,12 @@ export const TRAINING_MODULES: TrainingModule[] = [
           },
           {
             id: "vx2",
-            question: "How quickly should you respond to your manager on Voxer during work hours?",
+            question: "What do you need to do at the start and end of each knocking session?",
             options: [
-              "Immediately",
-              "Within 2 hours",
-              "By end of day",
-              "Within 24 hours",
+              "Call your manager",
+              "Send a 'Start' or 'Stop' message in the Voxer chat",
+              "Log in and out of SalesRabbit",
+              "Send an email to your team",
             ],
             correctAnswer: 1,
           },
