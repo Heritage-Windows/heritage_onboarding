@@ -177,7 +177,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     title: "Three Keys for Success",
     description: "The 3 controllable factors that drive your success as a Knocker.",
     videoUrl: "https://www.youtube.com/embed/_OwcwgpMXF4",
-    content: `For maximum success, there are 3 key factors that are controllable. When all three are being met, a Knocker should find that an average of two out of every seven appointments close. This assumes the presence of 0 Cancels At Door (CAD's). Deviations from this are to be expected sometimes, but should be analyzed — the reasons can be very instructive.\n\n**If you find that the first two keys are being met but you are not finding success, point 3 (attitude) is the problem.**`,
+    content: `For maximum success, there are 3 key factors within your control. When all three are being met, a knocker should find that an average of about 2 out of every 7 appointments close — assuming there are zero Cancels At Door (CADs). Deviations from this will sometimes occur, but should be analyzed — the reasons can be very instructive.\n\n**If you find that the first two keys are being met but you are not finding success, point 3 (attitude) is the problem.**`,
     order: 3,
     quiz: [],
     subModules: [
