@@ -178,12 +178,6 @@ export const TRAINING_MODULES: TrainingModule[] = [
             correctAnswer: 2,
           },
           {
-            id: "tk2",
-            question: "What is the maximum acceptable variance from the 50-conversation target?",
-            options: ["10%", "20%", "30%", "50%"],
-            correctAnswer: 1,
-          },
-          {
             id: "tk3",
             question: "If most houses in your neighborhood are vacant, what should you do?",
             options: [
