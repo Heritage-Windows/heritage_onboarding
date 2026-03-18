@@ -896,4 +896,36 @@ export const TRAINING_MODULES: TrainingModule[] = [
       },
     ],
   },
+  {
+    id: "law-of-averages",
+    title: "Law of Averages",
+    description: "Understand how the law of averages works in your favor over time.",
+    videoUrl: "https://www.youtube.com/embed/Vm8C9aFK2lI",
+    content: `The Law of Averages is one of the most powerful concepts in sales. When you put in consistent effort day after day, the numbers will work in your favor.\n\nWatch the training video above to understand how averages drive your success, then complete the quiz below.`,
+    order: 15,
+    quiz: [
+      {
+        id: "la1",
+        question: "What is the core idea behind the Law of Averages?",
+        options: [
+          "Luck determines your results",
+          "Consistent effort over time produces predictable results",
+          "You only need a few great days to succeed",
+          "Averages don't apply to sales",
+        ],
+        correctAnswer: 1,
+      },
+      {
+        id: "la2",
+        question: "How does the Law of Averages benefit a salesperson?",
+        options: [
+          "It guarantees every door will be a sale",
+          "It removes the need for skill development",
+          "It shows that sustained activity leads to consistent outcomes",
+          "It only works for experienced reps",
+        ],
+        correctAnswer: 2,
+      },
+    ],
+  },
 ];
