@@ -710,4 +710,155 @@ export const TRAINING_MODULES: TrainingModule[] = [
       },
     ],
   },
+  {
+    id: "specific-objections",
+    title: "Bonus: Specific Smokescreens & Objections",
+    description: "Practice handling specific common objections you'll encounter in the field.",
+    videoUrl: "",
+    content: `Now that you understand the A.I.R. framework and the three categories of objections, this bonus module covers specific smokescreens and objections you'll encounter regularly in the field.\n\nWork through each sub-section to practice recognizing and responding to these common scenarios.`,
+    order: 16,
+    quiz: [],
+    subModules: [
+      {
+        id: "obj-cant-afford",
+        title: '"I Can\'t Afford It"',
+        description: "How to address price concerns and introduce financing options.",
+        videoUrl: "",
+        content: `This is one of the most common objections, but it's often a sign of interest — they're thinking about it!\n\nWhy They Say It:\n• They may genuinely have budget concerns\n• They might not understand the long-term value\n• They could be testing to see if you'll offer a discount\n\nHow to Respond:\n"That's exactly why I'm here. Our windows actually pay for themselves through energy savings — most homeowners save 25-30% on their energy bills. Plus, we offer financing as low as $89/month with no money down. Would it help if I showed you what your monthly savings would look like?"\n\nKey Points:\n• Never dismiss their concern — acknowledge it\n• Shift the conversation from cost to investment & savings\n• Present financing options naturally\n• Use specific numbers and examples from other customers`,
+        quiz: [
+          {
+            id: "ca1",
+            question: 'When a customer says "I can\'t afford it," what should you emphasize?',
+            options: [
+              "Offer a discount immediately",
+              "Energy savings and flexible financing options",
+              "Tell them it's the cheapest option available",
+              "Walk away and try the next house",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "obj-windows-fine",
+        title: '"Our Windows Are Fine"',
+        description: "How to help homeowners see issues they may not have noticed.",
+        videoUrl: "",
+        content: `Many homeowners don't realize their windows are underperforming because they've gotten used to the problems.\n\nWhy They Say It:\n• They genuinely believe their windows are adequate\n• They haven't compared to modern window performance\n• They don't connect drafts or high bills to their windows\n\nHow to Respond:\n"That's great to hear! A lot of homeowners feel the same way. Out of curiosity, have you noticed any drafts near your windows during winter, or have your energy bills gone up over the past few years? Sometimes windows can look fine but still be costing you money."\n\nKey Points:\n• Don't argue — ask questions that reveal pain points\n• Mention common signs: drafts, condensation, fading furniture, noise\n• Offer a free window inspection as a no-pressure next step`,
+        quiz: [
+          {
+            id: "wf1",
+            question: 'When a homeowner says their windows are fine, what should you do first?',
+            options: [
+              "Tell them they're wrong",
+              "Ask questions to uncover hidden pain points",
+              "Leave immediately",
+              "Offer a steep discount",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "obj-how-much",
+        title: '"How Much Does It Cost?"',
+        description: "How to handle early price questions without losing the conversation.",
+        videoUrl: "",
+        content: `When a homeowner asks about price right away, they're showing interest — but giving a number too early can end the conversation.\n\nHow to Respond:\n"Great question! The price actually depends on a few things — how many windows, the style, and energy efficiency level. That's why we do a free in-home consultation, so we can give you an exact quote based on your home. Most homeowners are surprised at how affordable it is with our financing. Can I schedule a quick 30-minute visit?"\n\nKey Points:\n• Don't give a specific price at the door — it lacks context\n• Pivot to the value of a personalized quote\n• Mention financing to soften the price conversation\n• Use the question as a bridge to booking an appointment`,
+        quiz: [
+          {
+            id: "hm1",
+            question: "Why should you avoid giving a specific price at the door?",
+            options: [
+              "Because the price is a secret",
+              "Because it lacks context and can end the conversation",
+              "Because you don't know the price",
+              "Because it's against company policy to discuss price",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "obj-spouse",
+        title: '"I Need to Talk to My Spouse"',
+        description: "How to keep the deal alive when a decision-maker is absent.",
+        videoUrl: "",
+        content: `This is a legitimate concern — big home improvements are usually a joint decision.\n\nHow to Respond:\n"Absolutely, that's a big decision and it makes total sense to discuss it together. Would it work if I came back when you're both available? That way I can answer any questions together and make sure you both have all the information you need."\n\nKey Points:\n• Always respect this objection — never pressure\n• Offer to come back when both decision-makers are present\n• Set a specific callback time rather than leaving it open-ended\n• Ask: "When would be a good time for both of you?"`,
+        quiz: [
+          {
+            id: "sp1",
+            question: 'What is the best response to "I need to talk to my spouse"?',
+            options: [
+              "Try to close the deal anyway",
+              "Offer to come back when both are available",
+              "Ask them to call you when they decide",
+              "Give a bigger discount to close now",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "obj-not-interested",
+        title: '"I\'m Not Interested"',
+        description: "How to gracefully handle flat rejection and leave the door open.",
+        videoUrl: "",
+        content: `This is the most common objection and often the most reflexive — many people say it before they even know what you're offering.\n\nHow to Respond:\n"I completely understand — most of our happiest customers said the same thing at first! I'm not here to pressure you. Would it be okay if I just left you some information about how homeowners in your neighborhood are saving on energy costs? No obligation at all."\n\nKey Points:\n• Be gracious — a smile goes a long way\n• Don't take it personally; it's usually not about you\n• Leave a card or flyer — they may reach out later\n• Some of your best future customers will come from callbacks`,
+        quiz: [
+          {
+            id: "ni1",
+            question: 'Why do many homeowners say "I\'m not interested" immediately?',
+            options: [
+              "They've done extensive research on windows",
+              "It's a reflexive reaction to salespeople",
+              "They just bought new windows",
+              "They don't own their home",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "obj-new-windows",
+        title: '"I Just Got New Windows"',
+        description: "How to handle homeowners who recently replaced their windows.",
+        videoUrl: "",
+        content: `If they truly just got new windows, this conversation is done — but use it as a referral opportunity.\n\nHow to Respond:\n"That's great! How are you liking them? If you ever need anything in the future, here's my card. Also — do you happen to know any neighbors who might be looking at their windows? We have a great referral program."\n\nKey Points:\n• Be genuinely happy for them\n• Ask how the windows are performing — they might reveal issues\n• Pivot to referrals — they might know someone\n• Their "new" windows might not be that new`,
+        quiz: [
+          {
+            id: "nw1",
+            question: 'What opportunity does "I just got new windows" present?',
+            options: [
+              "None — end the conversation immediately",
+              "A chance to ask for referrals",
+              "An opportunity to criticize their new windows",
+              "A reason to come back tomorrow",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "obj-planning-move",
+        title: '"We\'re Planning to Move"',
+        description: "How to turn a move into a selling point for new windows.",
+        videoUrl: "",
+        content: `Homeowners planning to move often don't realize that new windows can increase their home's value and help it sell faster.\n\nHow to Respond:\n"That actually makes this perfect timing! New windows are one of the top home improvements for return on investment. Homes with new windows sell faster and for more money. Would it be worth a quick look to see how it could boost your home's value?"\n\nKey Points:\n• New windows offer 70-80% ROI at resale\n• Homes with new windows sell faster on average\n• Energy-efficient windows are a top buyer request\n• Frame it as an investment in their sale price, not an expense`,
+        quiz: [
+          {
+            id: "pm1",
+            question: 'How should you frame new windows to someone who is moving?',
+            options: [
+              "As a gift to the next owner",
+              "As an investment that boosts their sale price",
+              "As something they should skip",
+              "As a requirement from their realtor",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+    ],
+  },
 ];
