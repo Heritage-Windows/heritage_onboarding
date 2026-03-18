@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { TRAINING_MODULES } from "@/data/modules";
+import heritageLogo from "@/assets/heritage-logo-welcome.png";
 import {
   useModuleProgress,
   useCompleteModule,

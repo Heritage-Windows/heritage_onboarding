@@ -23,6 +23,7 @@ export interface TrainingModule {
   order: number;
   quiz: QuizQuestion[];
   subModules?: SubModule[];
+  showLogo?: boolean;
 }
 
 export const TRAINING_MODULES: TrainingModule[] = [
