@@ -109,7 +109,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
         id: "x-system",
         title: "X's — Accountability System",
         description: "Understand the check and X system and how it affects your deal percentage.",
-        videoUrl: "",
+        videoUrl: "https://www.youtube.com/embed/RQ2aTRa3iPY",
         content: `Heritage Windows uses an accountability system based on checks (✓) and X's to ensure everyone is meeting expectations.\n\n**What earns an X:**\n• 2 checks = 1 X\n• Missing a morning meeting\n• Less than 40 conversations in a day\n• Not working the full 5 hours of knocking\n\n**What earns a Check (✓):**\n• Being late to the morning meeting\n• Being late to the second (afternoon) session\n\n**Consequences:**\nWhen you accumulate 2 X's, your deal percentage will drop to 5%. You will remain at 5% until you work the schedule for two weeks without getting another check or X.\n\nIf you are able to work those two weeks without getting another check or X, your previous checks and X's will be removed.`,
         quiz: [
           {
