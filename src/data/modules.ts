@@ -413,7 +413,9 @@ export const TRAINING_MODULES: TrainingModule[] = [
   },
   {
     id: "four-criteria",
-    title: "The 4 Criteria",
+    title: "The 4 Qualifying Points",
+    description: "Understand the four criteria used to identify stronger opportunities in the field.",
+    videoUrl: "https://www.youtube.com/embed/zwTUVpnwrKo",
     description: "Understand the four criteria used to identify stronger opportunities in the field.",
     videoUrl: "",
     content: `This module is focused on the four criteria your team uses to evaluate opportunities and qualify conversations in the field. Use it to understand what to look for, how to stay consistent, and how to prioritize better conversations.\n\nAs more detailed training material is added, this module can be expanded with examples and coaching scenarios.`,
