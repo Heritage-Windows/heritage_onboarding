@@ -109,7 +109,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
         id: "x-system",
         title: "X's — Accountability System",
         description: "Understand the check and X system and how it affects your deal percentage.",
-        videoUrl: "",
+        videoUrl: "https://www.youtube.com/embed/RQ2aTRa3iPY",
         content: `Heritage Windows uses an accountability system based on checks (✓) and X's to ensure everyone is meeting expectations.\n\n**What earns an X:**\n• 2 checks = 1 X\n• Missing a morning meeting\n• Less than 40 conversations in a day\n• Not working the full 5 hours of knocking\n\n**What earns a Check (✓):**\n• Being late to the morning meeting\n• Being late to the second (afternoon) session\n\n**Consequences:**\nWhen you accumulate 2 X's, your deal percentage will drop to 5%. You will remain at 5% until you work the schedule for two weeks without getting another check or X.\n\nIf you are able to work those two weeks without getting another check or X, your previous checks and X's will be removed.`,
         quiz: [
           {
@@ -174,7 +174,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     id: "three-keys",
     title: "Three Keys for Success",
     description: "The 3 controllable factors that drive your success as a Knocker.",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/_OwcwgpMXF4",
     content: `For maximum success, there are 3 key factors that are controllable. When all three are being met, a Knocker should find that an average of two out of every seven appointments close. This assumes the presence of 0 Cancels At Door (CAD's). Deviations from this are to be expected sometimes, but should be analyzed — the reasons can be very instructive.\n\n**If you find that the first two keys are being met but you are not finding success, point 3 (attitude) is the problem.**`,
     order: 3,
     quiz: [],
@@ -413,9 +413,9 @@ export const TRAINING_MODULES: TrainingModule[] = [
   },
   {
     id: "four-criteria",
-    title: "The 4 Criteria",
+    title: "The 4 Qualifying Points",
     description: "Understand the four criteria used to identify stronger opportunities in the field.",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/embed/zwTUVpnwrKo",
     content: `This module is focused on the four criteria your team uses to evaluate opportunities and qualify conversations in the field. Use it to understand what to look for, how to stay consistent, and how to prioritize better conversations.\n\nAs more detailed training material is added, this module can be expanded with examples and coaching scenarios.`,
     order: 6,
     quiz: [
