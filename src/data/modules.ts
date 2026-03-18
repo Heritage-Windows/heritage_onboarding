@@ -30,8 +30,9 @@ export const TRAINING_MODULES: TrainingModule[] = [
     id: "welcome",
     title: "Welcome to Heritage Windows",
     description: "A brief company overview — our mission, products, and what sets us apart.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    content: `Welcome to the Heritage Windows family! We're thrilled to have you join our team of dedicated sales professionals.\n\nAt Heritage Windows, we believe every home deserves beautiful, energy-efficient windows and doors. Since our founding, we've helped thousands of homeowners transform their living spaces.\n\nOur Product Lines:\n• Premium Vinyl Windows — Energy Star certified, lifetime warranty\n• Wood-Clad Windows — Classic aesthetics with modern performance\n• Entry & Patio Doors — Security meets style\n• Storm Windows & Doors — Protection for every season\n\nOur Competitive Advantages:\n• Factory-direct pricing — no middlemen\n• Professional installation included\n• Lifetime warranty on all products\n• Flexible financing options\n• A+ BBB rating\n• Over 100,000 installations completed\n\nIn this onboarding program, you'll learn everything you need to succeed — from your daily schedule to advanced sales techniques. Each module builds on the last, so take your time and absorb the material.`,
+    videoUrl: "",
+    showLogo: true,
+    content: `Welcome to the Heritage Windows family! We're thrilled to have you join our team of dedicated sales professionals.\n\nAt Heritage Windows, we believe every home deserves beautiful, energy-efficient windows and doors. Since our founding, we've helped thousands of homeowners transform their living spaces.\n\nIn this onboarding program, you'll learn everything you need to be successful at Heritage Windows. Each module builds on the last, so take your time and absorb the material.`,
     order: 1,
     quiz: [
       {
