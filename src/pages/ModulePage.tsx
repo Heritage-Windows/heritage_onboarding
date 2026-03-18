@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { TRAINING_MODULES } from "@/data/modules";
+import heritageLogo from "@/assets/heritage-logo-welcome.png";
 import {
   useModuleProgress,
   useCompleteModule,
@@ -143,6 +144,13 @@ export default function ModulePage() {
             <CheckCircle2 className="w-6 h-6 text-success" />
           )}
         </div>
+
+        {/* Logo */}
+        {module.showLogo && (
+          <div className="flex justify-center">
+            <img src={heritageLogo} alt="Heritage Windows" className="max-w-xs md:max-w-sm" />
+          </div>
+        )}
 
         {/* Video (skip for sub-module parents) */}
         {module.videoUrl && <VideoPlayer url={module.videoUrl} title={module.title} />}

@@ -23,6 +23,7 @@ export interface TrainingModule {
   order: number;
   quiz: QuizQuestion[];
   subModules?: SubModule[];
+  showLogo?: boolean;
 }
 
 export const TRAINING_MODULES: TrainingModule[] = [
@@ -30,8 +31,9 @@ export const TRAINING_MODULES: TrainingModule[] = [
     id: "welcome",
     title: "Welcome to Heritage Windows",
     description: "A brief company overview — our mission, products, and what sets us apart.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    content: `Welcome to the Heritage Windows family! We're thrilled to have you join our team of dedicated sales professionals.\n\nAt Heritage Windows, we believe every home deserves beautiful, energy-efficient windows and doors. Since our founding, we've helped thousands of homeowners transform their living spaces.\n\nOur Product Lines:\n• Premium Vinyl Windows — Energy Star certified, lifetime warranty\n• Wood-Clad Windows — Classic aesthetics with modern performance\n• Entry & Patio Doors — Security meets style\n• Storm Windows & Doors — Protection for every season\n\nOur Competitive Advantages:\n• Factory-direct pricing — no middlemen\n• Professional installation included\n• Lifetime warranty on all products\n• Flexible financing options\n• A+ BBB rating\n• Over 100,000 installations completed\n\nIn this onboarding program, you'll learn everything you need to succeed — from your daily schedule to advanced sales techniques. Each module builds on the last, so take your time and absorb the material.`,
+    videoUrl: "",
+    showLogo: true,
+    content: `Welcome to the Heritage Windows family! We're thrilled to have you join our team of dedicated sales professionals.\n\nAt Heritage Windows, we believe every home deserves beautiful, energy-efficient windows and doors. Since our founding, we've helped thousands of homeowners transform their living spaces.\n\nIn this onboarding program, you'll learn everything you need to be successful at Heritage Windows. Each module builds on the last, so take your time and absorb the material.`,
     order: 1,
     quiz: [
       {
@@ -892,6 +894,38 @@ export const TRAINING_MODULES: TrainingModule[] = [
           "Focus only on volume",
         ],
         correctAnswer: 0,
+      },
+    ],
+  },
+  {
+    id: "law-of-averages",
+    title: "Law of Averages",
+    description: "Understand how the law of averages works in your favor over time.",
+    videoUrl: "https://www.youtube.com/embed/Vm8C9aFK2lI",
+    content: `The Law of Averages is one of the most powerful concepts in sales. When you put in consistent effort day after day, the numbers will work in your favor.\n\nWatch the training video above to understand how averages drive your success, then complete the quiz below.`,
+    order: 15,
+    quiz: [
+      {
+        id: "la1",
+        question: "What is the core idea behind the Law of Averages?",
+        options: [
+          "Luck determines your results",
+          "Consistent effort over time produces predictable results",
+          "You only need a few great days to succeed",
+          "Averages don't apply to sales",
+        ],
+        correctAnswer: 1,
+      },
+      {
+        id: "la2",
+        question: "How does the Law of Averages benefit a salesperson?",
+        options: [
+          "It guarantees every door will be a sale",
+          "It removes the need for skill development",
+          "It shows that sustained activity leads to consistent outcomes",
+          "It only works for experienced reps",
+        ],
+        correctAnswer: 2,
       },
     ],
   },
