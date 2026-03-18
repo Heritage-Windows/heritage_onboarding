@@ -26,14 +26,9 @@ export default function ProfileSetup() {
     last_name: "",
     phone: "",
     email: user?.email || "",
-    mailing_address: "",
-    emergency_contact_name: "",
-    emergency_contact_phone: "",
     shirt_size: "",
-    city_market: "",
   });
   const [hireDate, setHireDate] = useState<Date>();
-  const [dob, setDob] = useState<Date>();
 
   const handleChange = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -49,7 +44,6 @@ export default function ProfileSetup() {
       await updateProfile.mutateAsync({
         ...form,
         hire_date: format(hireDate, "yyyy-MM-dd"),
-        date_of_birth: dob ? format(dob, "yyyy-MM-dd") : null,
         profile_completed: true,
       });
       toast.success("Profile saved!");
@@ -85,69 +79,27 @@ export default function ProfileSetup() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number *</Label>
-                <Input id="phone" type="tel" value={form.phone} onChange={(e) => handleChange("phone", e.target.value)} required />
-              </div>
-
-              <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" value={form.email} onChange={(e) => handleChange("email", e.target.value)} />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="mailing_address">Mailing Address *</Label>
-                <Input id="mailing_address" value={form.mailing_address} onChange={(e) => handleChange("mailing_address", e.target.value)} required placeholder="123 Main St, City, State ZIP" />
+                <Label htmlFor="phone">Phone Number *</Label>
+                <Input id="phone" type="tel" value={form.phone} onChange={(e) => handleChange("phone", e.target.value)} required />
               </div>
 
               <div className="space-y-2">
-                <Label className="text-sm font-semibold text-foreground">Emergency Contact</Label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Input placeholder="Contact name *" value={form.emergency_contact_name} onChange={(e) => handleChange("emergency_contact_name", e.target.value)} required />
-                  <Input placeholder="Contact phone *" type="tel" value={form.emergency_contact_phone} onChange={(e) => handleChange("emergency_contact_phone", e.target.value)} required />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label>Preferred Shirt Size *</Label>
-                  <Select value={form.shirt_size} onValueChange={(val) => handleChange("shirt_size", val)} required>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select size" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {SHIRT_SIZES.map((s) => (
-                        <SelectItem key={s} value={s}>{s}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="space-y-2">
-                  <Label>City / Market *</Label>
-                  <Select value={form.city_market} onValueChange={(val) => handleChange("city_market", val)} required>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select market" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="Austin">Austin</SelectItem>
-                      <SelectItem value="Nashville">Nashville</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label>Date of Birth</Label>
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !dob && "text-muted-foreground")}>
-                      <CalendarIcon className="mr-2 h-4 w-4" />
-                      {dob ? format(dob, "PPP") : <span>Pick a date</span>}
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0" align="start">
-                    <Calendar mode="single" selected={dob} onSelect={setDob} captionLayout="dropdown-buttons" fromYear={1950} toYear={2010} initialFocus className="p-3 pointer-events-auto" />
-                  </PopoverContent>
-                </Popover>
+                <Label>Preferred Shirt Size *</Label>
+                <Select value={form.shirt_size} onValueChange={(val) => handleChange("shirt_size", val)} required>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select size" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {SHIRT_SIZES.map((s) => (
+                      <SelectItem key={s} value={s}>{s}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
 
               <div className="space-y-2">
