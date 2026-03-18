@@ -47,23 +47,6 @@ export const TRAINING_MODULES: TrainingModule[] = [
         ],
         correctAnswer: 1,
       },
-      {
-        id: "w2",
-        question: "What warranty does Heritage Windows offer on its products?",
-        options: ["1 year", "5 years", "10 years", "Lifetime"],
-        correctAnswer: 3,
-      },
-      {
-        id: "w3",
-        question: "How are the onboarding modules structured?",
-        options: [
-          "You can complete them in any order",
-          "Each module builds on the previous one",
-          "Only the first module is required",
-          "Modules are optional",
-        ],
-        correctAnswer: 1,
-      },
     ],
   },
   {
