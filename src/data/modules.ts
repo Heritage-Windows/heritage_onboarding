@@ -344,17 +344,6 @@ export const TRAINING_MODULES: TrainingModule[] = [
             ],
             correctAnswer: 1,
           },
-          {
-            id: "tr2",
-            question: "When should you check your Trello board?",
-            options: [
-              "Once a week",
-              "Only when you have appointments",
-              "Every morning to review the day's schedule",
-              "At the end of the day only",
-            ],
-            correctAnswer: 2,
-          },
         ],
       },
       {
