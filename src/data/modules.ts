@@ -344,17 +344,6 @@ export const TRAINING_MODULES: TrainingModule[] = [
             ],
             correctAnswer: 1,
           },
-          {
-            id: "tr2",
-            question: "When should you check your Trello board?",
-            options: [
-              "Once a week",
-              "Only when you have appointments",
-              "Every morning to review the day's schedule",
-              "At the end of the day only",
-            ],
-            correctAnswer: 2,
-          },
         ],
       },
       {
@@ -362,7 +351,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
         title: "Voxer — Team Chat",
         description: "Learn how to use Voxer for real-time team communication.",
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        content: `Voxer is our team communication platform — think of it as a walkie-talkie for the modern sales team.\n\nWhy Voxer:\n• **Instant voice messages** — Faster than typing, more personal than text\n• **Group channels** — Stay connected with your team and manager\n• **Listen on your schedule** — Messages wait for you, no need to answer live\n\nChannels You'll Join:\n• **Your Team Channel** — Daily updates, wins, and questions with your direct team\n• **Company Announcements** — Important updates from leadership\n• **Training Support** — Ask questions and get help during onboarding\n\nEtiquette:\n• Keep messages concise — under 30 seconds for voice messages\n• Use text for quick updates, voice for detailed questions\n• Celebrate team wins! Share your appointments and closes\n• Respond to your manager's messages within 2 hours during work hours\n• Mute channels outside of work hours to maintain work-life balance`,
+        content: `Voxer is our team communication platform — think of it as a walkie-talkie for the modern sales team.\n\nWhy Voxer:\n• **Instant voice messages** — Faster than typing, more personal than text\n• **Group channels** — Stay connected with your team and manager\n• **Listen on your schedule** — Messages wait for you, no need to answer live\n\nChannels You'll Join:\n• **Your Team Channel** — Daily updates, wins, and questions with your direct team\n• **Company Announcements** — Important updates from leadership\n• **Training Support** — Ask questions and get help during onboarding\n\nEtiquette:\n• Keep messages concise — under 30 seconds for voice messages\n• Use text for quick updates, voice for detailed questions\n• Celebrate team wins! Share your appointments and closes\n• Respond to your manager's messages within 2 hours during work hours\n• Mute channels outside of work hours to maintain work-life balance\n\n**Start/Stop Rule:**\n• At the **start** of each knocking session, send "Start" in the Voxer chat\n• At the **end** of each knocking session, send "Stop" in the Voxer chat\n• This lets your manager know when you're actively in the field`,
         quiz: [
           {
             id: "vx1",
@@ -377,12 +366,12 @@ export const TRAINING_MODULES: TrainingModule[] = [
           },
           {
             id: "vx2",
-            question: "How quickly should you respond to your manager on Voxer during work hours?",
+            question: "What do you need to do at the start and end of each knocking session?",
             options: [
-              "Immediately",
-              "Within 2 hours",
-              "By end of day",
-              "Within 24 hours",
+              "Call your manager",
+              "Send a 'Start' or 'Stop' message in the Voxer chat",
+              "Log in and out of SalesRabbit",
+              "Send an email to your team",
             ],
             correctAnswer: 1,
           },
