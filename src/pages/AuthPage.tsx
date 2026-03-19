@@ -157,11 +157,6 @@ export default function AuthPage() {
             )}
           </p>
 
-          {!isLogin && (
-            <p className="text-center text-xs text-muted-foreground">
-              After signing up, check your email to confirm your account.
-            </p>
-          )}
         </div>
       </div>
     </div>

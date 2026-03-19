@@ -159,7 +159,7 @@ export default function ModulePage() {
         <Card>
           <CardContent className="p-6">
             <h2 className="text-lg font-semibold mb-4 text-foreground">
-              {hasSubModules ? "Overview" : "Training Notes"}
+              Overview
             </h2>
             <div className="prose prose-sm max-w-none text-foreground/85 space-y-3">
               {module.content.split("\n").map((line, i) => (
