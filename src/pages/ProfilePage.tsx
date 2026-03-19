@@ -24,14 +24,9 @@ export default function ProfilePage() {
     last_name: "",
     phone: "",
     email: "",
-    mailing_address: "",
-    emergency_contact_name: "",
-    emergency_contact_phone: "",
     shirt_size: "",
-    city_market: "",
   });
   const [hireDate, setHireDate] = useState<Date>();
-  const [dob, setDob] = useState<Date>();
 
   useEffect(() => {
     if (profile) {
@@ -40,14 +35,9 @@ export default function ProfilePage() {
         last_name: profile.last_name || "",
         phone: profile.phone || "",
         email: profile.email || "",
-        mailing_address: profile.mailing_address || "",
-        emergency_contact_name: profile.emergency_contact_name || "",
-        emergency_contact_phone: profile.emergency_contact_phone || "",
         shirt_size: profile.shirt_size || "",
-        city_market: profile.city_market || "",
       });
       if (profile.hire_date) setHireDate(parseISO(profile.hire_date));
-      if (profile.date_of_birth) setDob(parseISO(profile.date_of_birth));
     }
   }, [profile]);
 
@@ -61,7 +51,6 @@ export default function ProfilePage() {
       await updateProfile.mutateAsync({
         ...form,
         hire_date: hireDate ? format(hireDate, "yyyy-MM-dd") : null,
-        date_of_birth: dob ? format(dob, "yyyy-MM-dd") : null,
       });
       toast.success("Profile updated!");
     } catch (err: any) {
@@ -107,19 +96,6 @@ export default function ProfilePage() {
                 <Input type="email" value={form.email} onChange={(e) => handleChange("email", e.target.value)} />
               </div>
 
-              <div className="space-y-2">
-                <Label>Mailing Address</Label>
-                <Input value={form.mailing_address} onChange={(e) => handleChange("mailing_address", e.target.value)} placeholder="123 Main St, City, State ZIP" />
-              </div>
-
-              <div className="space-y-2">
-                <Label className="text-sm font-semibold text-foreground">Emergency Contact</Label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Input placeholder="Contact name" value={form.emergency_contact_name} onChange={(e) => handleChange("emergency_contact_name", e.target.value)} />
-                  <Input placeholder="Contact phone" type="tel" value={form.emergency_contact_phone} onChange={(e) => handleChange("emergency_contact_phone", e.target.value)} />
-                </div>
-              </div>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Preferred Shirt Size</Label>
@@ -135,47 +111,19 @@ export default function ProfilePage() {
                   </Select>
                 </div>
                 <div className="space-y-2">
-                  <Label>City / Market</Label>
-                  <Select value={form.city_market} onValueChange={(val) => handleChange("city_market", val)}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select market" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="Austin">Austin</SelectItem>
-                      <SelectItem value="Nashville">Nashville</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <Label>Start Date</Label>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !hireDate && "text-muted-foreground")}>
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {hireDate ? format(hireDate, "PPP") : <span>Pick a date</span>}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar mode="single" selected={hireDate} onSelect={setHireDate} initialFocus className="p-3 pointer-events-auto" />
+                    </PopoverContent>
+                  </Popover>
                 </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label>Date of Birth</Label>
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !dob && "text-muted-foreground")}>
-                      <CalendarIcon className="mr-2 h-4 w-4" />
-                      {dob ? format(dob, "PPP") : <span>Pick a date</span>}
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0" align="start">
-                    <Calendar mode="single" selected={dob} onSelect={setDob} captionLayout="dropdown-buttons" fromYear={1950} toYear={2010} initialFocus className="p-3 pointer-events-auto" />
-                  </PopoverContent>
-                </Popover>
-              </div>
-
-              <div className="space-y-2">
-                <Label>Start Date</Label>
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !hireDate && "text-muted-foreground")}>
-                      <CalendarIcon className="mr-2 h-4 w-4" />
-                      {hireDate ? format(hireDate, "PPP") : <span>Pick a date</span>}
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0" align="start">
-                    <Calendar mode="single" selected={hireDate} onSelect={setHireDate} initialFocus className="p-3 pointer-events-auto" />
-                  </PopoverContent>
-                </Popover>
               </div>
 
               <Button type="submit" disabled={updateProfile.isPending}>
