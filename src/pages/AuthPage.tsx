@@ -75,6 +75,34 @@ export default function AuthPage() {
             <h2 className="text-xl font-bold text-foreground font-display">Heritage Windows</h2>
           </div>
 
+          {/* Tab toggle */}
+          <div className="flex rounded-lg bg-secondary/80 p-1 border border-border">
+            <button
+              type="button"
+              onClick={() => setIsLogin(true)}
+              className={cn(
+                "flex-1 py-2 px-4 text-sm font-semibold rounded-md transition-all",
+                isLogin
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              Sign In
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsLogin(false)}
+              className={cn(
+                "flex-1 py-2 px-4 text-sm font-semibold rounded-md transition-all",
+                !isLogin
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              Create Account
+            </button>
+          </div>
+
           {/* Header */}
           <div className="space-y-2">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
