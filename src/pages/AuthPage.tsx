@@ -126,7 +126,7 @@ export default function AuthPage() {
               </div>
             </div>
 
-            <Button type="submit" className="w-full h-11 font-semibold group" disabled={loading}>
+            <Button type="submit" className="w-full h-13 text-lg font-semibold group" disabled={loading}>
               {loading ? (
                 <Loader2 className="w-4 h-4 animate-spin" />
               ) : (
