@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Loader2, ArrowRight, Mail, Lock } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import heritageLogo from "@/assets/heritage-logo-square.png";
 
@@ -75,6 +76,34 @@ export default function AuthPage() {
             <h2 className="text-xl font-bold text-foreground font-display">Heritage Windows</h2>
           </div>
 
+          {/* Tab toggle */}
+          <div className="flex rounded-lg bg-secondary/80 p-1 border border-border">
+            <button
+              type="button"
+              onClick={() => setIsLogin(true)}
+              className={cn(
+                "flex-1 py-2 px-4 text-sm font-semibold rounded-md transition-all",
+                isLogin
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              Sign In
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsLogin(false)}
+              className={cn(
+                "flex-1 py-2 px-4 text-sm font-semibold rounded-md transition-all",
+                !isLogin
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              Create Account
+            </button>
+          </div>
+
           {/* Header */}
           <div className="space-y-2">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
@@ -138,28 +167,12 @@ export default function AuthPage() {
             </Button>
           </form>
 
-          {/* Toggle */}
-          <div className="text-center space-y-3">
-            {isLogin && (
-              <div className="p-3 rounded-lg bg-accent/10 border border-accent/20">
-                <p className="text-sm font-medium text-foreground">First time here?</p>
-                <p className="text-xs text-muted-foreground mt-0.5">You'll need to create an account to get started.</p>
-              </div>
-            )}
-            <button
-              type="button"
-              onClick={() => setIsLogin(!isLogin)}
-              className={`text-sm transition-colors ${
-                isLogin
-                  ? "px-4 py-2 rounded-md bg-secondary text-foreground font-semibold hover:bg-secondary/80 border border-border"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {isLogin ? "Create an Account" : (
-                <>Already have an account? <span className="text-primary font-medium hover:underline">Sign in</span></>
-              )}
-            </button>
-          </div>
+          {/* Hint for new users */}
+          {!isLogin && (
+            <p className="text-center text-xs text-muted-foreground">
+              After signing up, check your email to confirm your account.
+            </p>
+          )}
         </div>
       </div>
     </div>
