@@ -195,27 +195,16 @@ export const TRAINING_MODULES: TrainingModule[] = [
         title: "Key 2: Being 100% On Script",
         description: "Why staying on script is essential and how to self-correct.",
         videoUrl: "",
-        content: `**Being 100% on script:**\n\n• Staying on script requires periodic course corrections, as getting the script once and maintaining that forever is impossible.\n\n• Knockers must be humble enough to check themselves, even when they believe they are on script. Script deviation happens a little bit at a time. We often do not know we have deviated for a long time before we realize it.\n\n• Staying on script tells the homeowner who you are, why you're there, and what they should expect from the appointment.`,
+        content: `**Being 100% on script:**\n\n• The first step to success in this role is memorizing the script. This requires time and consistent effort. The expectation is that you have the script fully memorized before your first day of work, so you can position yourself to get your first sale within your first week.\n\n• Knockers must be humble enough to check themselves, even when they believe they are on script. Script deviation happens a little bit at a time.\n\n• Staying on script tells the homeowner who you are, why you're there, and what they should expect from the appointment.`,
         quiz: [
           {
             id: "tk4",
-            question: "Why is it important to periodically review your script delivery?",
+            question: "When should a knocker have the script memorized by?",
             options: [
-              "Because the script changes every week",
-              "Because script deviation happens gradually and often goes unnoticed",
-              "Because your manager requires it",
-              "It's not important once you've memorized it",
-            ],
-            correctAnswer: 1,
-          },
-          {
-            id: "tk5",
-            question: "What does staying on script communicate to the homeowner?",
-            options: [
-              "That you are reading from a paper",
-              "Who you are, why you're there, and what to expect",
-              "That the company is very strict",
-              "Nothing — homeowners don't notice",
+              "After the first week of work",
+              "Before their first day of work",
+              "Within the first month",
+              "It doesn't need to be fully memorized",
             ],
             correctAnswer: 1,
           },
