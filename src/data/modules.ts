@@ -276,105 +276,12 @@ export const TRAINING_MODULES: TrainingModule[] = [
     ],
   },
   {
-    id: "tools-systems",
-    title: "Tools and Systems",
-    description: "Get familiar with the technology and tools you'll use daily.",
-    videoUrl: "",
-    content: `Heritage Windows provides you with all the tools you need to succeed. This module covers the three core platforms you'll use every day. Complete each sub-section below to finish this module.`,
-    order: 5,
-    quiz: [],
-    subModules: [
-      {
-        id: "salesrabbit",
-        title: "SalesRabbit — Manage Leads",
-        description: "Learn how to use SalesRabbit to track and manage your leads in the field.",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        content: `SalesRabbit is your primary tool for managing leads in the field.\n\nKey Features:\n• **Lead Tracking** — Pin leads on a map as you canvass neighborhoods\n• **Status Updates** — Mark leads as Not Home, Not Interested, Callback, or Appointment Set\n• **Notes & Photos** — Add details about each home and homeowner\n• **Territory Management** — See which areas have been covered and which are fresh\n\nBest Practices:\n• Log every door knock immediately — don't wait until end of day\n• Use the color-coded pins to quickly see your territory status\n• Set callback reminders for interested homeowners\n• Upload photos of windows that need replacement to reference during follow-ups`,
-        quiz: [
-          {
-            id: "sr1",
-            question: "What is the primary purpose of SalesRabbit at Heritage Windows?",
-            options: [
-              "Scheduling appointments",
-              "Team communication",
-              "Managing and tracking leads in the field",
-              "Generating invoices",
-            ],
-            correctAnswer: 2,
-          },
-          {
-            id: "sr2",
-            question: "When should you log a door knock in SalesRabbit?",
-            options: [
-              "At the end of the day",
-              "Immediately after each knock",
-              "Once a week",
-              "Only if they're interested",
-            ],
-            correctAnswer: 1,
-          },
-        ],
-      },
-      {
-        id: "trello",
-        title: "Trello — Schedule Appointments",
-        description: "Learn how to use Trello boards to manage and schedule your appointments.",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        content: `Trello is how we manage the appointment pipeline from booking to completion.\n\nBoard Structure:\n• **New Appointments** — Freshly booked appointments land here\n• **Confirmed** — Appointments confirmed with the homeowner (24hr rule)\n• **Completed** — Successfully run appointments\n• **Rescheduled** — Appointments that need to be rebooked\n\nHow to Use:\n1. Create a card for each new appointment with the homeowner's name and address\n2. Add the appointment date/time as the due date\n3. Attach any relevant notes from SalesRabbit\n4. Move the card through the pipeline as the status changes\n5. Add outcome notes after each appointment\n\nTips:\n• Check your Trello board every morning to review the day's schedule\n• Use labels for appointment type (callback, referral, company lead)\n• @ mention your manager when an appointment is set`,
-        quiz: [
-          {
-            id: "tr1",
-            question: "What is the correct pipeline order in Trello?",
-            options: [
-              "Confirmed → New → Completed",
-              "New Appointments → Confirmed → Completed → Rescheduled",
-              "Completed → New → Rescheduled",
-              "There is no set order",
-            ],
-            correctAnswer: 1,
-          },
-        ],
-      },
-      {
-        id: "voxer",
-        title: "Voxer — Team Chat",
-        description: "Learn how to use Voxer for real-time team communication.",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        content: `Voxer is our team communication platform — think of it as a walkie-talkie for the modern sales team.\n\nWhy Voxer:\n• **Instant voice messages** — Faster than typing, more personal than text\n• **Group channels** — Stay connected with your team and manager\n• **Listen on your schedule** — Messages wait for you, no need to answer live\n\nChannels You'll Join:\n• **Your Team Channel** — Daily updates, wins, and questions with your direct team\n• **Company Announcements** — Important updates from leadership\n• **Training Support** — Ask questions and get help during onboarding\n\nEtiquette:\n• Keep messages concise — under 30 seconds for voice messages\n• Use text for quick updates, voice for detailed questions\n• Celebrate team wins! Share your appointments and closes\n• Respond to your manager's messages within 2 hours during work hours\n• Mute channels outside of work hours to maintain work-life balance\n\n**Start/Stop Rule:**\n• At the **start** of each knocking session, send "Start" in the Voxer chat\n• At the **end** of each knocking session, send "Stop" in the Voxer chat\n• This lets your manager know when you're actively in the field`,
-        quiz: [
-          {
-            id: "vx1",
-            question: "What type of communication tool is Voxer?",
-            options: [
-              "Email platform",
-              "Video conferencing tool",
-              "Voice and text messaging (walkie-talkie style)",
-              "Project management software",
-            ],
-            correctAnswer: 2,
-          },
-          {
-            id: "vx2",
-            question: "What do you need to do at the start and end of each knocking session?",
-            options: [
-              "Call your manager",
-              "Send a 'Start' or 'Stop' message in the Voxer chat",
-              "Log in and out of SalesRabbit",
-              "Send an email to your team",
-            ],
-            correctAnswer: 1,
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: "four-criteria",
     title: "The 4 Qualifying Points",
     description: "Understand the four criteria used to identify stronger opportunities in the field.",
     videoUrl: "https://www.youtube.com/embed/zwTUVpnwrKo",
     content: `This module is focused on the four criteria your team uses to evaluate opportunities and qualify conversations in the field. Use it to understand what to look for, how to stay consistent, and how to prioritize better conversations.\n\nAs more detailed training material is added, this module can be expanded with examples and coaching scenarios.`,
-    order: 6,
+    order: 5,
     quiz: [
       {
         id: "fc1",
@@ -406,7 +313,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Learn how clear goals create focus, consistency, and better field performance.",
     videoUrl: "https://www.youtube.com/embed/LhaidAAFgbY",
     content: `Goals give your effort direction. When you know exactly what you're aiming for each day, week, and month, it's easier to stay disciplined, measure progress, and keep momentum high.\n\nWatch the training video above to learn how goal-setting supports consistent performance, then complete the quiz below.`,
-    order: 7,
+    order: 6,
     quiz: [
       {
         id: "gl1",
@@ -434,11 +341,11 @@ export const TRAINING_MODULES: TrainingModule[] = [
   },
   {
     id: "hood-selection",
-    title: "Hood Selection",
+    title: "Neighborhood Selection",
     description: "Learn the mindset and techniques behind choosing the right neighborhoods to knock.",
     videoUrl: "https://www.youtube.com/embed/_8oFEl00ccs",
     content: `In this segment, we will discuss the mindset behind hood selection and techniques that can help you to do this effectively.\n\nThere are qualified buyers in every neighborhood, regardless of age, income, or other demographic factors. It is not a matter of "knockable" and "unknockable", but rather more or less efficient. Key indicators of higher probability:\n\n• 15 years old or older\n• Densely populated neighborhoods\n• Neighborhoods with the same windows built at the same time\n• Neighborhoods where people "take pride" in the appearance of their home, indicated by maintenance and appearance of their home and yard — they might care more about windows and might have a larger proportion of home owners (not renters)\n\n**This all being said, err on the side of knocking too much vs. skipping too much.**\n\n• If you find yourself jumping hood within a session more than a couple times a week, then in your effort to be efficient, you may be doing the opposite.\n\n**In order to effectively scout hood, reps may do any or all of the following:**\n\n• Use non-knocking hours to find hood (e.g. on your way out of hood/home from work, during your lunch break). It can be beneficial to look for hood the night before to make full use of knocking time.\n• Choose a neighborhood with advertising home pins from previous sales but where it has been long enough that other pins have been cleared.\n• Experienced reps may be able to determine a neighborhood's age simply by looking at the street on the map or a quick glance at the neighborhood shape.\n• Rely on experienced reps to show you where the good hood is, in order to later be able to effectively find your own.\n• Utilize apps like Zillow to search for neighborhoods that meet your parameters (age, price, etc.).\n\n**To reiterate, every neighborhood has sales.**`,
-    order: 8,
+    order: 7,
     quiz: [
       {
         id: "hs1",
@@ -470,7 +377,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Learn why you should never disqualify potential customers based on preconceived notions.",
     videoUrl: "https://www.youtube.com/embed/2Dk-1wLGoCA",
     content: `In this segment, we will discuss avoiding disqualifying potential customers based on preconceived notions.\n\n**One way that you may lose on potential sales is by disqualifying customers based on biases such as:**\n\n• A house looks dirty or not taken care of\n• The person is too old or young\n• The person looks like they are in a bad mood or may be rude\n• The person is standing outside and/or they look busy\n• The person has a no soliciting sign — this also includes multiple signs or specific and intricate no soliciting signs. When knocking on a homeowner's door who has a no soliciting sign, the biggest risk is that they point out the sign and say they are not interested. However, the potential is a possible sale that could net you upwards of $1,000.\n• The windows look like they have already been replaced\n• The house has too many steps/too long of a driveway\n\n**While the list of possible excuses to not knock a home are endless, the result is always the same. Missing out on a possible sale.**\n\n**The philosophy behind knocking every door and pitching every homeowner is simple. It is the best gambling odds in the world.**\n\nYou miss 100% of the shots you don't take. If you have taken the time to walk up to a door and knock on it, you may as well give it your best effort and convert it into a set, then a sale. Deliver the script with confidence at each door, regardless of who opens it.`,
-    order: 9,
+    order: 8,
     quiz: [
       {
         id: "np1",
@@ -502,7 +409,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Learn the framework for handling all objections: smokescreens, true objections, and criteria objections.",
     videoUrl: "https://www.youtube.com/embed/4-E22GkbbI4",
     content: `**Objections are a staple of any sales job. By knowing how to properly understand and address them, you can achieve success. All objections fall into one of three categories:**\n\n**1. Smokescreens. Objections are a good thing.**\n• Smokescreens constitute the majority of objections. Every objection should be treated as a smokescreen at first, until proven otherwise.\n• **Acknowledge, Invalidate, Return (A.I.R)**\n  — Acknowledge: Pause from the script to hear them and acknowledge that you have heard them. (Ex. "I hear you…" or "I get that all the time…" or "Glad you brought that up".)\n  — Invalidate: This should not be a lengthy explanation but rather a quick, invalidating statement. (Ex. "That's actually no issue for us" or "My marketing director will be able to cover that in the appointment" and then continue.)\n  — Return: Immediately return to script. Do not hesitate during this step.\n\n**2. True Objections**\n• An objection can be considered more valid if a homeowner doubles down or repeats an objection.\n  — At this point, give a more specific answer. (Ex. "We actually have some great financing options" or "Our discount often moves the windows up the priority list".)\n  — It is important that once you have given a more specific answer, you return back to where you left off, rather than waiting for a response or engaging in conversation.\n\n**3. Objections to the 4 Criteria**\n• If a homeowner makes a comment that is in contrast with the 4 criteria, the Knocker should consider it a true objection and address it immediately and directly.\n  — This is done by saying something like "It's important that your spouse is there to make sure it's a good fit for everyone" or "We will need the full 45 minutes in order to cover everything".\n  — After directly addressing this red flag, return to the script.\n  — If they continue to insist that they do not want to meet this standard, do a takeaway or simply leave.\n\n**Understanding that the vast majority of sales come after at least one objection should encourage you to push through objections. Only setting appointments that are low hanging fruit is the mark of a weak and undisciplined salesperson.**\n\n**Objections need to be practiced in order to maintain confidence and trust from the homeowner. It can't sound different than the rest of the script.**`,
-    order: 10,
+    order: 9,
     quiz: [
       {
         id: "ob1",
@@ -545,7 +452,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Master body language and nonverbal communication to build trust at the door.",
     videoUrl: "https://www.youtube.com/embed/vPsaUlvTZbk",
     content: `Your body language speaks louder than your words. Before a homeowner even hears your pitch, they've already formed an impression based on your nonverbal communication.\n\nWatch the training video above to learn how to use nonverbals effectively, then complete the quiz below.`,
-    order: 11,
+    order: 10,
     quiz: [
       {
         id: "nv1",
@@ -577,7 +484,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Learn how your tone of voice and pitch affect your sales conversations.",
     videoUrl: "https://www.youtube.com/embed/gIxjxF8soMY",
     content: `How you say something is just as important as what you say. Your tonality and pitch can convey confidence, excitement, empathy, or urgency — all of which influence whether a homeowner engages with you.\n\nWatch the training video above to master tonality and pitch techniques, then complete the quiz below.`,
-    order: 12,
+    order: 11,
     quiz: [
       {
         id: "tp1",
@@ -608,8 +515,8 @@ export const TRAINING_MODULES: TrainingModule[] = [
     title: "Cadence",
     description: "Master the rhythm and pacing of your sales conversations for maximum impact.",
     videoUrl: "https://www.youtube.com/embed/DHdSil0pWus",
-    content: `Cadence is the rhythm and pacing of your speech. Getting it right means you sound natural, confident, and engaging. Getting it wrong means you come across as robotic, rushed, or disinterested.\n\nWatch the training video above to learn how to control your cadence, then complete the quiz below.` ,
-    order: 13,
+    content: `Cadence is the rhythm and pacing of your speech. Getting it right means you sound natural, confident, and engaging. Getting it wrong means you come across as robotic, rushed, or disinterested.\n\nWatch the training video above to learn how to control your cadence, then complete the quiz below.`,
+    order: 12,
     quiz: [
       {
         id: "cd1",
@@ -641,7 +548,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Learn the basics of recruiting, mentoring, and growing the team.",
     videoUrl: "",
     content: `Recruiting helps Heritage Windows grow with strong people who fit the culture and can succeed in the field. Great recruiters do more than invite people in — they help set expectations, support development, and create momentum for the team.\n\nAs more recruiting-specific training is added, this module can be expanded with scripts, roleplay examples, and leadership expectations.`,
-    order: 14,
+    order: 13,
     quiz: [
       {
         id: "rc1",
@@ -673,7 +580,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
     description: "Understand how the law of averages works in your favor over time.",
     videoUrl: "https://www.youtube.com/embed/Vm8C9aFK2lI",
     content: `The Law of Averages is one of the most powerful concepts in sales. When you put in consistent effort day after day, the numbers will work in your favor.\n\nWatch the training video above to understand how averages drive your success, then complete the quiz below.`,
-    order: 15,
+    order: 14,
     quiz: [
       {
         id: "la1",
@@ -696,6 +603,88 @@ export const TRAINING_MODULES: TrainingModule[] = [
           "It only works for experienced reps",
         ],
         correctAnswer: 2,
+      },
+    ],
+  },
+  {
+    id: "tools-systems",
+    title: "Tools and Systems",
+    description: "Get familiar with the technology and tools you'll use daily.",
+    videoUrl: "",
+    content: `Heritage Windows provides you with all the tools you need to succeed. This module covers the three core platforms you'll use every day. Complete each sub-section below to finish this module.`,
+    order: 15,
+    quiz: [],
+    subModules: [
+      {
+        id: "salesrabbit",
+        title: "Enzy — Manage Leads",
+        description: "Learn how to use Enzy to track and manage your leads in the field.",
+        videoUrl: "",
+        content: `Enzy is your primary tool for managing leads in the field.\n\n**Key Features:**\n\n• **Lead Tracking** — Place pins on a map as you canvass neighborhoods. Ex: Not Home, Not Interested, Appointment Set\n\n• **Territory Management** — See which areas have been recently knocked and which are fresh`,
+        quiz: [
+          {
+            id: "sr1",
+            question: "What is the primary purpose of Enzy at Heritage Windows?",
+            options: [
+              "Scheduling appointments",
+              "Team communication",
+              "Managing and tracking leads in the field",
+              "Generating invoices",
+            ],
+            correctAnswer: 2,
+          },
+        ],
+      },
+      {
+        id: "trello",
+        title: "Trello — Appointment Pipeline",
+        description: "Learn how to use Trello to manage the appointment pipeline from booking to completion.",
+        videoUrl: "",
+        content: `Trello is how we manage the appointment pipeline from booking to completion.\n\n**How to Use:**\n\n1. When you set an appointment with a homeowner, you will enter their name (and spouse's name) into the available time slot.\n\n2. Enter their phone number and address.\n\n3. After you have left their home, enter any applicable notes (Ex: Just moved in, recently got a quote from Anderson, etc.) AND their response to the 1-10 question in the script.\n\n4. Forget about it and go get your next set!`,
+        quiz: [
+          {
+            id: "tr1",
+            question: "What information should you enter into Trello when you set an appointment?",
+            options: [
+              "Only the homeowner's name",
+              "Name, spouse's name, phone number, and address",
+              "Just the address",
+              "Only your notes",
+            ],
+            correctAnswer: 1,
+          },
+        ],
+      },
+      {
+        id: "voxer",
+        title: "Voxer — Team Chat",
+        description: "Learn how to use Voxer for real-time team communication.",
+        videoUrl: "",
+        content: `Voxer is our team communication platform. It is used for the following:\n\n• **Celebrate team wins!** Share your appointments by sending your favorite emoji in the chat after you set an appointment! Sales will be announced by closers via voice message when a deal closes.\n\n• **Get help from the team.** Voxer is a great place to ask questions and get answers. Did you hear something from a homeowner you don't know how to overcome? Ask the team in Voxer and get immediate help!\n\n• **Start/Stop messages:**\n    • At the start of each knocking session, send "Start" in the Voxer chat\n    • At the end of each knocking session, send "Stop" in the Voxer chat\n    • This lets your manager know when you're actively in the field`,
+        quiz: [
+          {
+            id: "vx1",
+            question: "What should you send in Voxer at the start and end of each knocking session?",
+            options: [
+              "Your location",
+              "A voice message to your manager",
+              "\"Start\" and \"Stop\" messages",
+              "A summary of your conversations",
+            ],
+            correctAnswer: 2,
+          },
+          {
+            id: "vx2",
+            question: "What is one way Voxer is used to celebrate wins?",
+            options: [
+              "Sending an email to the team",
+              "Sending your favorite emoji after setting an appointment",
+              "Posting on social media",
+              "Calling your manager",
+            ],
+            correctAnswer: 1,
+          },
+        ],
       },
     ],
   },
