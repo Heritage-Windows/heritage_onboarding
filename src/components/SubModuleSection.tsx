@@ -77,6 +77,7 @@ export function SubModuleSection({
 
             {/* Quiz */}
             <QuizSection
+              key={subModule.id}
               questions={subModule.quiz}
               onComplete={(score) => onQuizComplete(subModule.id, score)}
               isCompleted={isCompleted}
