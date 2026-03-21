@@ -433,17 +433,6 @@ export const TRAINING_MODULES: TrainingModule[] = [
         ],
         correctAnswer: 1,
       },
-      {
-        id: "ob3",
-        question: "When does an objection become a 'true objection'?",
-        options: [
-          "The first time they say it",
-          "When the homeowner doubles down or repeats the objection",
-          "When you can't think of a response",
-          "Only when your manager says so",
-        ],
-        correctAnswer: 1,
-      },
     ],
   },
   {
