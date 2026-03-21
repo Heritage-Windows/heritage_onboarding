@@ -193,6 +193,7 @@ export default function ModulePage() {
           </div>
         ) : (
           <QuizSection
+            key={module.id}
             questions={module.quiz}
             onComplete={handleQuizComplete}
             isCompleted={status === "completed"}

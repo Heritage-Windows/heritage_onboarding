@@ -305,17 +305,6 @@ export const TRAINING_MODULES: TrainingModule[] = [
         ],
         correctAnswer: 1,
       },
-      {
-        id: "fc3",
-        question: "How far out should you NEVER set an appointment?",
-        options: [
-          "More than one day",
-          "More than two days",
-          "More than a week",
-          "More than three days",
-        ],
-        correctAnswer: 1,
-      },
     ],
   },
   {
