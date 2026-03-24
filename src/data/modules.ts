@@ -646,6 +646,58 @@ export const TRAINING_MODULES: TrainingModule[] = [
     ],
   },
   {
+    id: "recruiting",
+    title: "Bonus: Recruiting",
+    description: "Building our team through example, energy, and authenticity.",
+    videoUrl: "",
+    content: `**Building our team through example, energy, and authenticity.**
+
+**1. Plug Into the Culture**
+
+At Heritage Windows, you're not just joining a sales team — you're joining a crew that hypes each other up every morning, trains together, and actually enjoys what we do. The energy, the competition, the wins — that's what keeps us going. Show up to meetings, get involved, and feed off the momentum. The more you're part of the culture, the more people will want to join you.
+
+**2. Share the Opportunity, Not the Job**
+
+When you talk to potential recruits, don't lead with "door-to-door sales." Lead with what this job gives you: freedom, real income potential, leadership skills, and confidence that carries into every part of life. People don't want another job — they want a chance to grow. That's what we offer.
+
+**3. Use Referrals and Team Incentives**
+
+Some of your best recruits will be your friends — people who already trust you. Invite them to a morning meeting, show them the team, or bring them to an event. If they join and stick with it, you both win. We also run referral incentives and team challenges, so there's real reward for helping the team grow.
+
+**4. Be Proud of What You Do**
+
+One of the best recruiting tools is simply living it out. Let people see that you enjoy your job, that you're good at it, and that you're building something real. Talk about your wins humbly — not to brag, but to show what's possible. Whether it's posting a Big Check Friday photo or mentioning how much you've learned, people notice when you're confident and grateful for your work. That quiet pride speaks louder than any pitch.
+
+**Recruiting Bonus**
+
+There is a $2,000 bonus paid out to you on anyone that you recruit after they get their 5th sale.`,
+    order: 15,
+    quiz: [
+      {
+        id: "rc1",
+        question: "When talking to potential recruits, what should you lead with?",
+        options: [
+          "Door-to-door sales details",
+          "The opportunity — freedom, income potential, leadership, and growth",
+          "The daily schedule",
+          "How easy the job is",
+        ],
+        correctAnswer: 1,
+      },
+      {
+        id: "rc2",
+        question: "How much is the recruiting bonus, and when is it paid out?",
+        options: [
+          "$500 after their first sale",
+          "$1,000 after their 3rd sale",
+          "$2,000 after their 5th sale",
+          "$2,000 after their first month",
+        ],
+        correctAnswer: 2,
+      },
+    ],
+  },
+  {
     id: "specific-objections",
     title: "Bonus: Specific Smokescreens & Objections",
     description: "Practice handling specific common objections you'll encounter in the field.",
