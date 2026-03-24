@@ -577,7 +577,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
         title: "Enzy — Manage Leads",
         description: "Learn how to use Enzy to track and manage your leads in the field.",
         videoUrl: "",
-        content: `Enzy is your primary tool for managing leads in the field.\n\n**Key Features:**\n\n• **Lead Tracking** — Place pins on a map as you canvass neighborhoods. Ex: Not Home, Not Interested, Appointment Set\n\n• **Territory Management** — See which areas have been recently knocked and which are fresh`,
+        content: `Enzy is your primary tool for managing leads in the field.\n\nKey Features:\n\n• Lead Tracking — Place pins on a map as you canvass neighborhoods. Ex: Not Home, Not Interested, Appointment Set\n\n• Territory Management — See which areas have been recently knocked and which are fresh`,
         quiz: [
           {
             id: "sr1",
