@@ -533,7 +533,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
   },
   {
     id: "recruiting",
-    title: "Recruiting",
+    title: "Bonus: Recruiting",
     description: "Building our team through example, energy, and authenticity.",
     videoUrl: "",
     content: `**Building our team through example, energy, and authenticity.**
