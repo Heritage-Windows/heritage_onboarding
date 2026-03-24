@@ -617,7 +617,7 @@ export const TRAINING_MODULES: TrainingModule[] = [
         title: "Voxer — Team Chat",
         description: "Learn how to use Voxer for real-time team communication.",
         videoUrl: "",
-        content: `Voxer is our team communication platform. It is used for the following:\n\n• **Celebrate team wins!** Share your appointments by sending your favorite emoji in the chat after you set an appointment! Sales will be announced by closers via voice message when a deal closes.\n\n• **Get help from the team.** Voxer is a great place to ask questions and get answers. Did you hear something from a homeowner you don't know how to overcome? Ask the team in Voxer and get immediate help!\n\n• **Start/Stop messages:**\n    • At the start of each knocking session, send "Start" in the Voxer chat\n    • At the end of each knocking session, send "Stop" in the Voxer chat\n    • This lets your manager know when you're actively in the field`,
+        content: `Voxer is our team communication platform. It is used for the following:\n\nCelebrate team wins! Share your appointments by sending your favorite emoji in the chat after you set an appointment! Sales will be announced by closers via voice message when a deal closes.\n\nGet help from the team. Voxer is a great place to ask questions and get answers. Did you hear something from a homeowner you don't know how to overcome? Ask the team in Voxer and get immediate help!\n\nStart/Stop messages:\n    • At the start of each knocking session, send "Start" in the Voxer chat\n    • At the end of each knocking session, send "Stop" in the Voxer chat\n    • This lets your manager know when you're actively in the field`,
         quiz: [
           {
             id: "vx1",
